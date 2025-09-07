@@ -8,35 +8,44 @@
     <meta charset="utf-8">
     <!--Title that will display on the tab-->
     <title>MLB Web Page</title>
+    <!--Link to get styled spreadsheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
   <!--End of head -->
   </head>
   <!--Begining of actual visible content-->
   <body>
-    <!--Image of the national league logo-->
-    <img src="images/national_league.png" alt="National League Logo" width="200px" height="200px">
-    <!--Line break for formatting-->
-    <br>
-    <!--Citation of the source of the image, as per request of the provider-->
-    <p>Image courtesy of <a href="https://www.sportslogos.net">www.sportslogos.net</a></p>
+    <!-- div to center image -->
+    <div class="centered">
+      <!--Image of the national league logo-->
+      <img src="images/national_league.png" alt="National League Logo" width="200px" height="200px">
+      <!--Line break for formatting-->
+      <br>
+      <!--Citation of the source of the image, as per request of the provider-->
+      <p class="centered italic">Image courtesy of <a href="https://www.sportslogos.net">www.sportslogos.net</a></p>
+    </div>
     <!--Beginning of the header, containing basic info about the website-->
     <header>
-        <!--First heading, biggest on the page as it is the title-->
-        <h1>MLB NL CENTERAL INFO SITE</h1>
-        <!--Paragraph elaborating-->
-        <p>This website is dedicated to information regarding the National Leage Centeral Divison of the MLB</p>
+        <!--First section-->
+        <section>
+            <!--First heading, biggest on the page as it is the title-->
+            <h1 id="main-title" class="centered bold">MLB NL CENTERAL INFO SITE</h1>
+            <!--Paragraph elaborating-->
+            <p>This website is dedicated to information regarding the National Leage Centeral Divison of the MLB</p>
+            <!--The first section-->
+        </section>
+        <!--Second section-->
+        <section>
+            <!--Second Heading, smaller than the first but still prominent-->
+            <h2>About</h2>
+            <!--A breif explanation about what NL Centeral is-->
+            <p >MLB, or Major League Baseball, orginizes its teams into two arbitrary leagues with three roughly geographical divisions each. National League Central, or NL Central, is a division geographically spanning across much of the Midwest and Rustbelt. Most famous for its historical Cardinals-Cubs rivalry, it is one of the most compeditive divisons in baseball.</p>
+            <!--End of first section-->
+        </section>
     <!--End of header-->
     </header>
     <!--Beginning of the main section, containing the priamary focus of this page-->
-    <main>
-      <!--The first section-->
-      <section>
-        <!--Second Heading, smaller than the first but still prominent-->
-        <h2>About</h2>
-        <!--A breif explanation about what NL Centeral is-->
-        <p>MLB, or Major League Baseball, orginizes its teams into two arbitrary leagues with three roughly geographical divisions each. National League Central, or NL Central, is a division geographically spanning across much of the Midwest and Rustbelt. Most famous for its historical Cardinals-Cubs rivalry, it is one of the most compeditive divisons in baseball.</p>
-      <!--End of first section-->
-      </section>
-      <!--Second section-->
+    <main class="flex-row">
+      <!--First section-->
       <section>
           <!--Second Heading, smaller than the first but still prominent-->
           <h2>Teams</h2>
@@ -56,26 +65,29 @@
               <li>Pittsburg Pirates</li>
           <!--End of unordered list-->
           </ul>
-          <!--Third heading, smaller than the second heading but still prominent as a heading-->
-          <h3>Current Standings (9/6/2025 @ 3:22PM CST)</h3>
-          <!--Breif explanation of baseball standings-->
-          <p>In baseball, your standing is determined by your win-loss (W/L) ratio. The higher this ratio, the higher your overall standing.</p>
-          <!--An ordered list of each team by their W/L ratio-->
-          <ol>
-              <!--List item for a team-->
-              <li>Miliwakee Brewers (87-55)</li>
-              <!--List item for a team-->
-              <li>Chicago Cubs (81-60)</li>
-              <!--List item for a team-->
-              <li>Cincinatti Reds (70-71)</li>
-              <!--List item for a team-->
-              <li>St. Louis Cardinals (70-72)</li>
-              <!--List item for a team-->
-              <li>Pittsburg Pirates (64-78)</li>
-          <!--End of ordered list-->
-          </ol>
-        <!--End of second section-->
         </section>
+        <!--Second section-->
+        <section>
+              <!--Third heading, smaller than the second heading but still prominent as a heading-->
+              <h3>Current Standings (9/6/2025 @ 3:22PM CST)</h3>
+              <!--Breif explanation of baseball standings-->
+              <p>In baseball, your standing is determined by your win-loss (W/L) ratio. The higher this ratio, the higher your overall standing.</p>
+              <!--An ordered list of each team by their W/L ratio-->
+              <ol id="standing-list">
+                  <!--List item for a team-->
+                  <li>Miliwakee Brewers (87-55)</li>
+                  <!--List item for a team-->
+                  <li>Chicago Cubs (81-60)</li>
+                  <!--List item for a team-->
+                  <li>Cincinatti Reds (70-71)</li>
+                  <!--List item for a team-->
+                  <li>St. Louis Cardinals (70-72)</li>
+                  <!--List item for a team-->
+                  <li>Pittsburg Pirates (64-78)</li>
+                  <!--End of ordered list-->
+              </ol>
+          <!--End of second section-->
+          </section>
     <!--End of main content-->
     </main>
     <!--A footer, directing the user to the second page once they finish reading-->
