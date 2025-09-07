@@ -1,0 +1,33 @@
+body {
+  background-color: #232323;
+  color: #DFDFDF
+}
+
+p {
+    font-family: Geneva sans-serif;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#main-title {
+    font-size: 3rem;
+}
+
+#standing-list {
+    color: #FFFF44
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
