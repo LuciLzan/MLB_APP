@@ -3,6 +3,10 @@ body {
   color: #DFDFDF
 }
 
+a {
+    color: #FF6688;
+}
+
 p {
     font-family: Geneva sans-serif;
 }
